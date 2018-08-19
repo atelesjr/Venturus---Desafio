@@ -1,0 +1,40 @@
+.sport{
+    height: 12.5rem;
+    padding: $padding-content;
+    background-color: $color-green-light;
+
+    display: flex;
+    align-items: center;
+
+    &__box {
+        display: grid;
+        grid-template-columns: min-content max-content;
+        grid-column-gap: 2rem;
+        align-items: flex-start;
+        margin-right: 6rem;
+
+        &-icon{
+            grid-row: span 2;
+
+            font-size: 5rem;
+            color: $color-green-primary;
+            transform: translateX(1rem)
+
+        }
+
+        &-category {
+            font-size: 1.3rem;
+            font-weight: 300;
+            transform: translateX(1rem)
+            
+        }
+
+        &-value {
+            grid-column: 2;
+
+            font-size: 2.4rem;
+            font-weight: 600;
+            transform: translateX(1rem)
+        }
+    }
+}
