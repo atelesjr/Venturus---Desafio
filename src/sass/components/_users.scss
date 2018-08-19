@@ -65,6 +65,11 @@
                 border: 0;
                 padding: 1.6rem .2rem;
                 text-align: left;
+
+                a {
+                    color: $color-green-primary;
+                    text-decoration: none;
+                }
             }
     
             th {

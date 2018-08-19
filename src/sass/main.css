@@ -378,6 +378,9 @@ h2 {
         border: 0;
         padding: 1.6rem .2rem;
         text-align: left; }
+        .users__list table th a, .users__list table td a {
+          color: #00b38f;
+          text-decoration: none; }
       .users__list table th {
         background: #fff;
         font-weight: 500; }

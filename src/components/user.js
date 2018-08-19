@@ -36,60 +36,60 @@ export default props => {
                     <tr>
                         <td>Bret</td>
                         <td>Lanne</td>
-                        <td><a href="/" className="users__list-link">Sincere@april.biz</a></td>
-                        <td><a href="/" className="users__list-link">Gwenborough</a></td>
+                        <td><a href="/">Sincere@april.biz</a></td>
+                        <td><a href="/">Gwenborough</a></td>
                         <td>Always</td>
                         <td>Every day</td>
-                        <td><a href="/" className="users__list-link">3</a></td>
-                        <td><a href="/" className="users__list-link">2</a></td>
+                        <td><a href="/">3</a></td>
+                        <td><a href="/">2</a></td>
                         <td>38</td>
                         <td><a href="/" className="users-list trash"><i className="fas fa-trash-alt trash"></i></a></td>
                     </tr>
                     <tr>
                         <td>Bret</td>
                         <td>Lanne</td>
-                        <td><a href="/" className="users__list-link">Sincere@april.biz</a></td>
-                        <td><a href="/" className="users__list-link">Gwenborough</a></td>
+                        <td><a href="/">Sincere@april.biz</a></td>
+                        <td><a href="/">Gwenborough</a></td>
                         <td>Always</td>
                         <td>Every day</td>
-                        <td><a href="/" className="users__list-link">3</a></td>
-                        <td><a href="/" className="users__list-link">2</a></td>
+                        <td><a href="/">3</a></td>
+                        <td><a href="/">2</a></td>
                         <td>38</td>
                         <td><a href="/" className="users-list trash"><i className="fas fa-trash-alt"></i></a></td>
                     </tr>
                     <tr>
                         <td>Bret</td>
                         <td>Lanne</td>
-                        <td><a href="/" className="users__list-link">Sincere@april.biz</a></td>
-                        <td><a href="/" className="users__list-link">Gwenborough</a></td>
+                        <td><a href="/">Sincere@april.biz</a></td>
+                        <td><a href="/">Gwenborough</a></td>
                         <td>Always</td>
                         <td>Every day</td>
-                        <td><a href="/" className="users__list-link">3</a></td>
-                        <td><a href="/" className="users__list-link">2</a></td>
+                        <td><a href="/">3</a></td>
+                        <td><a href="/">2</a></td>
                         <td>38</td>
                         <td><a href="/" className="users-list trash"><i className="fas fa-trash-alt"></i></a></td>
                     </tr>
                     <tr>
                         <td>Bret</td>
                         <td>Lanne</td>
-                        <td><a href="/" className="users__list-link">Sincere@april.biz</a></td>
-                        <td><a href="/" className="users__list-link">Gwenborough</a></td>
+                        <td><a href="/">Sincere@april.biz</a></td>
+                        <td><a href="/">Gwenborough</a></td>
                         <td>Always</td>
                         <td>Every day</td>
-                        <td><a href="/" className="users__list-link">3</a></td>
-                        <td><a href="/" className="users__list-link">2</a></td>
+                        <td><a href="/">3</a></td>
+                        <td><a href="/">2</a></td>
                         <td>38</td>
                         <td><a href="/" className="users-list trash"><i className="fas fa-trash-alt"></i></a></td>
                     </tr>
                     <tr>
                         <td>Bret</td>
                         <td>Lanne</td>
-                        <td><a href="/" className="users__list-link">Sincere@april.biz</a></td>
-                        <td><a href="/" className="users__list-link">Gwenborough</a></td>
+                        <td><a href="/">Sincere@april.biz</a></td>
+                        <td><a href="/">Gwenborough</a></td>
                         <td>Always</td>
                         <td>Every day</td>
-                        <td><a href="/" className="users__list-link">3</a></td>
-                        <td><a href="/" className="users__list-link">2</a></td>
+                        <td><a href="/">3</a></td>
+                        <td><a href="/">2</a></td>
                         <td>38</td>
                         <td><a href="/" className="users-list trash"><i className="fas fa-trash-alt"></i></a></td>
                     </tr>
