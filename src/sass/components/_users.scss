@@ -28,6 +28,11 @@
                 font-family: inherit;
                 font-size: inherit;
                 color: $color-grey-letter;
+                outline: none;
+
+                &:hover, &:focus {
+                    border-color: $color-green-primary
+                }
             }
 
             &-btn {
@@ -43,7 +48,7 @@
                 }
 
                 &:active, &:hover {
-                    color: black;  
+                    color: $color-green-primary;  
                 }
 
                 &-icon {
@@ -60,16 +65,12 @@
         table {
             width: 100%;
             border-collapse: collapse;
+            border: none;
             
             th, td {
-                border: 0;
-                padding: 1.6rem .2rem;
+                
+                padding: 1.3rem 1rem;
                 text-align: left;
-
-                a {
-                    color: $color-green-primary;
-                    text-decoration: none;
-                }
             }
     
             th {

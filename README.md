@@ -8,8 +8,8 @@ Agostinho Ferreira Teles Júnior
 npm i
 
 #To run: 
-npm run start
+npm start
 
 *Web*
 
-![Natours](https://github.com/atelesjr/Natours/blob/master/img/snaps/01.PNG)
+![Venturos Sports](https://github.com/atelesjr/Natours/blob/master/img/01.PNG)

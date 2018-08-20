@@ -28,7 +28,8 @@ body {
   border: none;
   cursor: pointer;
   font-weight: 500;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  outline: none; }
   .btn-submit {
     background-color: #00b38f;
     color: #fff;
@@ -54,6 +55,13 @@ h2 {
   font-size: 1.8rem;
   font-weight: 300; }
 
+a {
+  color: #00b38f;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
 .breadcrumb {
   display: flex;
   align-items: center;
@@ -63,11 +71,6 @@ h2 {
   padding: 0 6rem; }
   .breadcrumb__home {
     font-size: 1.2rem; }
-  .breadcrumb a {
-    color: #00b38f;
-    text-decoration: none; }
-  .breadcrumb a:hover {
-    text-decoration: underline; }
   .breadcrumb__track {
     color: #c0c0c0;
     margin: 0 1.5rem; }
@@ -112,51 +115,56 @@ h2 {
     grid-template-columns: min-content max-content;
     grid-column-gap: 1rem;
     align-items: center; }
+    .header__user:hover {
+      cursor: pointer; }
     .header__user-icon {
       border: 1px solid #000;
       border-radius: 50%;
       padding: .8rem;
       font-size: 1.5rem;
-      font-weight: 400;
-      transform: translateX(1.8rem);
-      z-index: 2; }
-    .header__user-select {
-      position: relative;
-      width: 100%; }
-      .header__user-select select {
-        display: inline-block;
-        cursor: pointer;
-        outline: 0;
-        border: 0;
-        padding: 0 1.5rem;
-        font-size: 1.5rem;
-        font-weight: 400;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none; }
-      .header__user-select select::-ms-expand {
-        display: none; }
-      .header__user-select select:hover,
-      .header__user-select select:focus {
-        color: #008066;
-        background: #ffffff; }
-      .header__user-select select:disabled {
-        opacity: 0.5;
-        pointer-events: none; }
-      .header__user-select select:hover ~ .select_arrow,
-      .header__user-select select:focus ~ .select_arrow {
-        border-top-color: black; }
-      .header__user-select select:disabled ~ .select_arrow {
-        border-top-color: #494949; }
-    .header__user .select_arrow {
+      font-weight: 400; }
+    .header__user-menu {
+      display: grid;
+      grid-template-columns: 1fr 3rem;
+      position: relative; }
+    .header__user-btn {
+      border: 0;
+      background-color: #fff;
+      outline: none;
+      display: block; }
+      .header__user-btn:hover {
+        cursor: pointer; }
+    .header__user-options {
       position: absolute;
-      top: 5px;
-      right: -.3rem;
+      display: none;
+      top: 3.2rem;
+      right: 0.8rem;
+      width: 19rem;
+      padding: 2rem 0 1rem 0;
+      background: #fff;
+      box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.27);
+      z-index: 1; }
+      .header__user-options a {
+        padding: .7rem 2rem;
+        text-decoration: none;
+        display: block;
+        color: inherit; }
+        .header__user-options a:hover, .header__user-options a:active {
+          color: #00b38f;
+          background-color: #ebe9e9; }
+      .header__user-options .margin-line {
+        margin: 1rem 0; }
+    .header__user:hover .header__user-options, .header__user-options:hover {
+      display: block; }
+    .header__user .select-arrow {
+      position: absolute;
+      top: .1rem;
+      right: .5rem;
       width: 10px;
       height: 10px;
       border: solid #000000;
       border-width: 0 3px 3px 0;
-      display: inline-block;
+      display: block;
       padding: 3px;
       transform: rotate(45deg);
       -webkit-transform: rotate(45deg); }
@@ -197,12 +205,7 @@ h2 {
     grid-row-gap: 2rem;
     grid-column-gap: 8rem;
     margin: 4rem auto;
-    width: 92rem;
-    /*
-        &-label {
-
-        }
-        */ }
+    width: 92rem; }
     .reg__form-line {
       grid-column: 1 / span 2;
       width: 100%;
@@ -218,7 +221,8 @@ h2 {
       padding: 1rem 1rem .5rem 1rem;
       border-radius: 6px;
       font-family: inherit;
-      font-size: inherit; }
+      font-size: inherit;
+      outline: none; }
       .reg__form-input:focus, .reg__form-input:hover {
         border: 1px solid #00b38f; }
     .reg__form-group-radio {
@@ -258,10 +262,12 @@ h2 {
           background-color: #000;
           opacity: 0;
           transition: opacity .2s; }
-        .reg__form-radio-btn:hover, .reg__form-radio-btn:checked {
+        .reg__form-radio-btn:hover {
           border: 1px solid #00b38f; }
-      .reg__form-radio-input:checked ~ .reg__form-radio-label .reg__form-radio-btn::after {
-        opacity: 1; }
+      .reg__form-radio-input:checked ~ .reg__form-radio-label .reg__form-radio-btn {
+        border: 1px solid #00b38f; }
+        .reg__form-radio-input:checked ~ .reg__form-radio-label .reg__form-radio-btn::after {
+          opacity: 1; }
     .reg__form-group-checkbox {
       display: grid;
       grid-template-rows: 1fr 1fr;
@@ -304,8 +310,10 @@ h2 {
           transition: opacity .2s; }
         .reg__form-checkbox-btn:hover, .reg__form-checkbox-btn:checked {
           border: 1px solid #00b38f; }
-      .reg__form-checkbox-input:checked ~ .reg__form-checkbox-label .reg__form-checkbox-btn::after {
-        opacity: 1; }
+      .reg__form-checkbox-input:checked ~ .reg__form-checkbox-label .reg__form-checkbox-btn {
+        border: 1px solid #00b38f; }
+        .reg__form-checkbox-input:checked ~ .reg__form-checkbox-label .reg__form-checkbox-btn::after {
+          opacity: 1; }
 
 .sport {
   height: 12.5rem;
@@ -355,7 +363,10 @@ h2 {
       border-radius: 4px;
       font-family: inherit;
       font-size: inherit;
-      color: #a0a1a0; }
+      color: #a0a1a0;
+      outline: none; }
+      .users__head-filter-input:hover, .users__head-filter-input:focus {
+        border-color: #00b38f; }
     .users__head-filter-btn {
       border: none;
       background-color: #fff;
@@ -366,21 +377,18 @@ h2 {
       .users__head-filter-btn:focus {
         outline: none; }
       .users__head-filter-btn:active, .users__head-filter-btn:hover {
-        color: black; }
+        color: #00b38f; }
       .users__head-filter-btn-icon {
         font-size: 1.4rem; }
   .users__list {
     width: 100%; }
     .users__list table {
       width: 100%;
-      border-collapse: collapse; }
+      border-collapse: collapse;
+      border: none; }
       .users__list table th, .users__list table td {
-        border: 0;
-        padding: 1.6rem .2rem;
+        padding: 1.3rem 1rem;
         text-align: left; }
-        .users__list table th a, .users__list table td a {
-          color: #00b38f;
-          text-decoration: none; }
       .users__list table th {
         background: #fff;
         font-weight: 500; }

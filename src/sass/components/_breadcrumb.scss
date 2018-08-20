@@ -10,21 +10,10 @@
     &__home {
         font-size: 1.2rem;
     }
-
-    a {
-        color: $color-green-primary;
-        text-decoration: none;
-    }
-
-    a:hover, {
-        text-decoration: underline;
-    }
-
-    &__track {
+        &__track {
         color: $color-grey-light3;
         margin: 0 1.5rem;
     }
-
 
 }
 

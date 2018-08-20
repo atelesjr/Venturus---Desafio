@@ -5,14 +5,14 @@ export default props => {
     return(
         <div className="breadcrumb">
             <a href="/">
-                <i class="fas fa-home breadcrumb__home"></i>
+                <i className="fas fa-home breadcrumb__home"></i>
             </a> 
-            <i class="fas fa-chevron-right breadcrumb__track"></i>
+            <i className="fas fa-chevron-right breadcrumb__track"></i>
             <a href="/">Page Name</a> 
-            <i class="fas fa-chevron-right breadcrumb__track"></i>
+            <i className="fas fa-chevron-right breadcrumb__track"></i>
             <a href="/" >...</a>
-            <i class="fas fa-chevron-right breadcrumb__track"></i>
-            <spam className="breadcrumb_link--active">Currentpage</spam>
+            <i className="fas fa-chevron-right breadcrumb__track"></i>
+            <span className="breadcrumb_link--active">Currentpage</span>
         </div>
     )
 }
