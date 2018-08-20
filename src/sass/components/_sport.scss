@@ -18,15 +18,13 @@
 
             font-size: 5rem;
             color: $color-green-primary;
-            transform: translateX(1rem)
-
+            transform: translateX(1rem);
         }
 
         &-category {
             font-size: 1.3rem;
             font-weight: 300;
-            transform: translateX(1rem)
-            
+            transform: translateX(1rem);
         }
 
         &-value {
@@ -34,7 +32,7 @@
 
             font-size: 2.4rem;
             font-weight: 600;
-            transform: translateX(1rem)
+            transform: translateX(1rem);
         }
     }
 }

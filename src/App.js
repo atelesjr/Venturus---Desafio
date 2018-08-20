@@ -30,36 +30,30 @@ class App extends Component {
       axios.get(photosURL),
       axios.get(albumsURL)
     ])
-    .then(axios.spread((users, posts, albums, photos ) => this.setState(
+    .then(axios.spread((users, posts, albums, photos ) => {
+      this.setState(
         { ...this.state, 
           usersList: users.data,
           postsList: posts.data,
           albumsList: albums.data,
           photosList: photos.data  
         } ) 
+      }
       ) 
     ) 
     .catch(error => console.log('Erro:', error))
-    
   }
    
-
   render() {
     
     return (
       <div className="container">
-
         <Header name="Agostinho Teles Jr." />
         <Breadcrumb />
         <Sport />
         <User usersList={ this.state.usersList } 
-          postsList={ this.state.postsList } 
-          photosList={ this.state.photosList} 
-          albumsList={ this.state.albumsList }
         />
-      
-        <Registration />
-        
+        <Registration />    
       </div>
     )
   }

@@ -21,10 +21,7 @@ export default props => {
                     />
                 </div>
             </div> 
-            <UserList usersList={ props.usersList } postsList={ props.postsList }
-                albumsList={ props.albumsList } photosList={ props.photosList } 
-            />
-         
+            <UserList usersList={ props.usersList } />
         </div>
     )
 }

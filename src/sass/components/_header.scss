@@ -39,11 +39,8 @@
             font-size: 1.9rem;
             font-weight: 500;
         }
-
     }
-     //BRAND - END
-
-    // USER--------------------------
+     
     &__user{
         display: grid;
         grid-template-columns: min-content max-content;
@@ -63,7 +60,6 @@
             
         }
 
-       // SELECT BEGIN---------------------------------
         &-menu{
             display: grid;
             grid-template-columns: 1fr 3rem;
@@ -126,8 +122,5 @@
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
         }
-        //SELECT END-------------------
     }
-    //USER-----------------------------
-
 }

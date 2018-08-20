@@ -46,8 +46,6 @@ export default props => {
                 </div>
             </div>
 
-
-
             <div className="reg__form-group">
             <label htmlFor="E-mail" className="reg__form-label">E-mail</label>
                 <input type="email" className="reg__form-input" placeholder="" id="email" required />
@@ -121,8 +119,7 @@ export default props => {
                     Discard
                 </button>
             </div>
-
-
+            
         </div>
     )
 }

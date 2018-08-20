@@ -4,15 +4,7 @@ export default props => {
     
     const renderRows = () => {
         const dataUsers = props.usersList 
-        const dataPosts = props.postsList
-        const dataAlbums = props.albumsList
-        const dataPhotos = props.photosList
-        console.log('userlist:', dataUsers)
-        //console.log('postList:', dataPosts)
-        //console.log('userlist:', dataAlbums)
-        //console.log('postList:', dataPhotos)
-        //return <p>teste</p>
-        
+
         return dataUsers.map(users => ( 
             
             <tr key={ users.id } >
@@ -61,6 +53,7 @@ export default props => {
                    { renderRows() }
                 </tbody>
              </table>
+             
         </div>   
     )
 }
