@@ -9,7 +9,6 @@ npm i
 #To run: 
 npm start
 
-*Web*
 
 ![Venturos Sports](https://github.com/atelesjr/Venturus---Desafio/blob/master/src/img/01.PNG)
 
