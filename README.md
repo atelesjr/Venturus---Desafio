@@ -1,8 +1,7 @@
 # Venturus - Desafio
 React, Sass / CSS3
 
-# Author: 
-Agostinho Ferreira Teles Júnior
+Author: Agostinho Ferreira Teles Júnior
 
 #To install: 
 npm i
